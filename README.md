@@ -1,8 +1,8 @@
 ### Frankifuscus - Base16
 *@fraxgut* - *VPL+ACR* - *README.md*
 
-| Base Colors | Hex Code | Other Colors | Hex Code |
-|-------------|----------|--------------|----------|
+| Base Colors | Código HEX | Otros Colores | Código HEX |
+|-------------|------------|---------------|------------|
 | base00      | ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`  | base08 (Red) | ![#C23127](https://placehold.co/15x15/C23127/C23127.png) `#C23127`  |
 | base01      | ![#0C0B0B](https://placehold.co/15x15/0C0B0B/0C0B0B.png) `#0C0B0B`  | base09 (Orange) | ![#FD9720](https://placehold.co/15x15/FD9720/FD9720.png) `#FD9720`  |
 | base02      | ![#111110](https://placehold.co/15x15/111110/111110.png) `#111110`  | base0A (Yellow) | ![#EDB443](https://placehold.co/15x15/EDB443/EDB443.png) `#EDB443`  |
