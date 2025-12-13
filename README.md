@@ -1,5 +1,5 @@
 # Frankifuscus — Base16
-*@fraxgut - LPC*
+*@fraxgut - CC-BY-SA 4.0*
 
 
 ### 🎨 Paleta
