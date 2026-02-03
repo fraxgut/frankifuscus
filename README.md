@@ -54,19 +54,7 @@ base0E: "7513d8"
 base0F: "d81365"
 ```
 
-## Frankifuscus Phosphor Mono
-
-Variación retro-mono anclada a un tono verde fosfórico. Conserva la matemática HSV del original: los neutros mantienen su escalera de valor con baja saturación, y los acentos mantienen S/V mientras su tono se comprime hacia el ancla.  
-Nota: Los nombres Rojo/Naranja/etc. se conservan por compatibilidad Base16, pero en esta variación todos los acentos están desplazados hacia el verde.
-
-### 📐 Reglas matemáticas (HSV)
-
-- Convertir cada color a HSV.
-- Ancla: H = 120°.
-- Neutros (S < 0.15): H' = 120°, S' = S, V' = V.
-- Acentos (S ≥ 0.15): H' = 120° + 0.4 × shortest_angle(H − 120°), S' = S, V' = V.
-- `shortest_angle(dH)` ajusta dH al rango [-180°, 180°].
-- Variaciones ±25%: Darken = round(RGB × 0.75), Lighten = round(RGB + (255 − RGB) × 0.25).
+## Frankifuscus Phosphor Green Mono
 
 ### 🎨 Paleta
 
