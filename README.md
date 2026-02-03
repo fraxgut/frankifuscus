@@ -53,3 +53,69 @@ base0D: "1386d8"
 base0E: "7513d8"
 base0F: "d81365"
 ```
+
+## Frankifuscus Phosphor Mono
+
+Variación retro-mono anclada a un tono verde fosfórico. Conserva la matemática HSV del original: los neutros mantienen su escalera de valor con baja saturación, y los acentos mantienen S/V mientras su tono se comprime hacia el ancla.  
+Nota: Los nombres Rojo/Naranja/etc. se conservan por compatibilidad Base16, pero en esta variación todos los acentos están desplazados hacia el verde.
+
+### 📐 Reglas matemáticas (HSV)
+
+- Convertir cada color a HSV.
+- Ancla: H = 120°.
+- Neutros (S < 0.15): H' = 120°, S' = S, V' = V.
+- Acentos (S ≥ 0.15): H' = 120° + 0.4 × shortest_angle(H − 120°), S' = S, V' = V.
+- `shortest_angle(dH)` ajusta dH al rango [-180°, 180°].
+- Variaciones ±25%: Darken = round(RGB × 0.75), Lighten = round(RGB + (255 − RGB) × 0.25).
+
+### 🎨 Paleta
+
+| Colores Base | Código HEX | Otros Colores | Código HEX |
+|-------------|------------|---------------|------------|
+| base00      | ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`  | base08 (Rojo)     | ![#B7D813](https://placehold.co/15x15/B7D813/B7D813.png) `#B7D813` |
+| base01      | ![#0B0C0B](https://placehold.co/15x15/0B0C0B/0B0C0B.png) `#0B0C0B`  | base09 (Naranja)  | ![#9DD813](https://placehold.co/15x15/9DD813/9DD813.png) `#9DD813` |
+| base02      | ![#212421](https://placehold.co/15x15/212421/212421.png) `#212421`  | base0A (Amarillo) | ![#7CD813](https://placehold.co/15x15/7CD813/7CD813.png) `#7CD813` |
+| base03      | ![#3E433E](https://placehold.co/15x15/3E433E/3E433E.png) `#3E433E`  | base0B (Verde)    | ![#47D813](https://placehold.co/15x15/47D813/47D813.png) `#47D813` |
+| base04      | ![#626A62](https://placehold.co/15x15/626A62/626A62.png) `#626A62`  | base0C (Cian)     | ![#13D83B](https://placehold.co/15x15/13D83B/13D83B.png) `#13D83B` |
+| base05      | ![#8B968B](https://placehold.co/15x15/8B968B/8B968B.png) `#8B968B`  | base0D (Azul)     | ![#13D883](https://placehold.co/15x15/13D883/13D883.png) `#13D883` |
+| base06      | ![#B8C8B8](https://placehold.co/15x15/B8C8B8/B8C8B8.png) `#B8C8B8`  | base0E (Violeta)  | ![#13D8D8](https://placehold.co/15x15/13D8D8/13D8D8.png) `#13D8D8` |
+| base07      | ![#EBFFEB](https://placehold.co/15x15/EBFFEB/EBFFEB.png) `#EBFFEB`  | base0F (Magenta)  | ![#D1D813](https://placehold.co/15x15/D1D813/D1D813.png) `#D1D813` |
+
+### 🧪 Variaciones (±25%)
+
+| Colores Base | Original                                                                                                  | Darken(25%)                                                                                               | Lighten(25%)                                                                                               | Otros Colores     | Original                                                                                                  | Darken(25%)                                                                                               | Lighten(25%)                                                                                               |
+|-------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **base00**  | ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`                                        | ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`                                        | ![#404040](https://placehold.co/15x15/404040/404040.png) `#404040`                                        | **base08 (Rojo)** | ![#B7D813](https://placehold.co/15x15/B7D813/B7D813.png) `#B7D813`                                        | ![#89A20E](https://placehold.co/15x15/89A20E/89A20E.png) `#89A20E`                                        | ![#C9E24E](https://placehold.co/15x15/C9E24E/C9E24E.png) `#C9E24E`                                        |
+| **base01**  | ![#0B0C0B](https://placehold.co/15x15/0B0C0B/0B0C0B.png) `#0B0C0B`                                        | ![#080908](https://placehold.co/15x15/080908/080908.png) `#080908`                                        | ![#484948](https://placehold.co/15x15/484948/484948.png) `#484948`                                        | **base09 (Naranja)** | ![#9DD813](https://placehold.co/15x15/9DD813/9DD813.png) `#9DD813`                                        | ![#76A20E](https://placehold.co/15x15/76A20E/76A20E.png) `#76A20E`                                        | ![#B6E24E](https://placehold.co/15x15/B6E24E/B6E24E.png) `#B6E24E`                                        |
+| **base02**  | ![#212421](https://placehold.co/15x15/212421/212421.png) `#212421`                                        | ![#191B19](https://placehold.co/15x15/191B19/191B19.png) `#191B19`                                        | ![#585B58](https://placehold.co/15x15/585B58/585B58.png) `#585B58`                                        | **base0A (Amarillo)** | ![#7CD813](https://placehold.co/15x15/7CD813/7CD813.png) `#7CD813`                                        | ![#5DA20E](https://placehold.co/15x15/5DA20E/5DA20E.png) `#5DA20E`                                        | ![#9DE24E](https://placehold.co/15x15/9DE24E/9DE24E.png) `#9DE24E`                                        |
+| **base03**  | ![#3E433E](https://placehold.co/15x15/3E433E/3E433E.png) `#3E433E`                                        | ![#2E322E](https://placehold.co/15x15/2E322E/2E322E.png) `#2E322E`                                        | ![#6E726E](https://placehold.co/15x15/6E726E/6E726E.png) `#6E726E`                                        | **base0B (Verde)**   | ![#47D813](https://placehold.co/15x15/47D813/47D813.png) `#47D813`                                        | ![#35A20E](https://placehold.co/15x15/35A20E/35A20E.png) `#35A20E`                                        | ![#75E24E](https://placehold.co/15x15/75E24E/75E24E.png) `#75E24E`                                        |
+| **base04**  | ![#626A62](https://placehold.co/15x15/626A62/626A62.png) `#626A62`                                        | ![#4A504A](https://placehold.co/15x15/4A504A/4A504A.png) `#4A504A`                                        | ![#898F89](https://placehold.co/15x15/898F89/898F89.png) `#898F89`                                        | **base0C (Cian)**    | ![#13D83B](https://placehold.co/15x15/13D83B/13D83B.png) `#13D83B`                                        | ![#0EA22C](https://placehold.co/15x15/0EA22C/0EA22C.png) `#0EA22C`                                        | ![#4EE26C](https://placehold.co/15x15/4EE26C/4EE26C.png) `#4EE26C`                                        |
+| **base05**  | ![#8B968B](https://placehold.co/15x15/8B968B/8B968B.png) `#8B968B`                                        | ![#687068](https://placehold.co/15x15/687068/687068.png) `#687068`                                        | ![#A8B0A8](https://placehold.co/15x15/A8B0A8/A8B0A8.png) `#A8B0A8`                                        | **base0D (Azul)**    | ![#13D883](https://placehold.co/15x15/13D883/13D883.png) `#13D883`                                        | ![#0EA262](https://placehold.co/15x15/0EA262/0EA262.png) `#0EA262`                                        | ![#4EE2A2](https://placehold.co/15x15/4EE2A2/4EE2A2.png) `#4EE2A2`                                        |
+| **base06**  | ![#B8C8B8](https://placehold.co/15x15/B8C8B8/B8C8B8.png) `#B8C8B8`                                        | ![#8A968A](https://placehold.co/15x15/8A968A/8A968A.png) `#8A968A`                                        | ![#CAD6CA](https://placehold.co/15x15/CAD6CA/CAD6CA.png) `#CAD6CA`                                        | **base0E (Violeta)** | ![#13D8D8](https://placehold.co/15x15/13D8D8/13D8D8.png) `#13D8D8`                                        | ![#0EA2A2](https://placehold.co/15x15/0EA2A2/0EA2A2.png) `#0EA2A2`                                        | ![#4EE2E2](https://placehold.co/15x15/4EE2E2/4EE2E2.png) `#4EE2E2`                                        |
+| **base07**  | ![#EBFFEB](https://placehold.co/15x15/EBFFEB/EBFFEB.png) `#EBFFEB`                                        | ![#B0BFB0](https://placehold.co/15x15/B0BFB0/B0BFB0.png) `#B0BFB0`                                        | ![#F0FFF0](https://placehold.co/15x15/F0FFF0/F0FFF0.png) `#F0FFF0`                                        | **base0F (Magenta)** | ![#D1D813](https://placehold.co/15x15/D1D813/D1D813.png) `#D1D813`                                        | ![#9DA20E](https://placehold.co/15x15/9DA20E/9DA20E.png) `#9DA20E`                                        | ![#DCE24E](https://placehold.co/15x15/DCE24E/DCE24E.png) `#DCE24E`                                        |
+
+---
+
+### 📦 Base16 scheme (YAML)
+
+```yaml
+scheme: "Frankifuscus Phosphor Mono"
+author: "@fraxgut"
+slug: "frankifuscus-phosphor-mono"
+base00: "000000"
+base01: "0b0c0b"
+base02: "212421"
+base03: "3e433e"
+base04: "626a62"
+base05: "8b968b"
+base06: "b8c8b8"
+base07: "ebffeb"
+base08: "b7d813"
+base09: "9dd813"
+base0A: "7cd813"
+base0B: "47d813"
+base0C: "13d83b"
+base0D: "13d883"
+base0E: "13d8d8"
+base0F: "d1d813"
+```
